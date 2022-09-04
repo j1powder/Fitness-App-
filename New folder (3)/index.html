@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    <script src="index.js" defer></script>
+</head>
+<style>
+    body{
+        margin: 3%;
+    }
+    
+    #form-section{
+        margin: 5%;
+        border-radius:6px;
+        box-shadow: 0 4px 8px 0 rgb(70, 70, 70);
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>THE NEW FITNESS APP</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>
+                    Welcome to the new fitness app. This is a one page app to help encourage and motivate you with a daily workout and help you set up an exercise and nutrition goal for the day.
+                </h4>
+                <h4>Below you will find a section to enter some metrics and receive a daily workout based on your input.</h4>
+            </div>
+        </div>
+    </div> 
+    <div id="form-section" class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <br><br>
+    <form id="form-body" >
+    <label>Day of the week</label>  <select id="day" name="day" class="form-control">
+        <option value=""></option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+      </select><br>
+    <label>Name</label><input class="form-control" type="text" name="name" id="name"><br>
+    <label>Age</label><input class="form-control" id="age" name="age" value=""><br>
+    <label>Weight</label><input class="form-control" id="weight" name="weight" value=""><br>
+    <button type="submit" id="btn" class="btn btn-primary">press me</button>
+    </form><br><br>
+    <div>
+    <p id="name-here"></p>
+    <ul id="textgoeshere"></ul>
+    <p id="show-weight"></p>
+    </div>
+</div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>
+                Maybe you aren't sure how to get started on these exercises? Would you prefer a random workout from youtube?<br>
+                <br>Try one of these cardio blasts! 
+            </h4><br>
+            <button id="workout-grabber" class="btn - btn-primary">Get YouTube Workout!</button>
+            <br><br>
+            <div id="get-ytworkout"></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>Now after that amazing workout, it's time to refuel in a healthy way!<br>
+             Your goal should determine your diet. For example Body Builders looking to add a ton of muscle really need to bulk up on calories, However, if you're trying to lose weight, you are going to want a leaner diet with less calories, but higher protein to maintain the muscle.
+            </h4><br>
+            <h4>Select your fitness goal</h4>
+            <select id="meals" class="form-control" name="meals" value="">
+                <option></option>
+                <option>Lose Weight</option>
+                <option>Gain Muscle</option>
+            </select>
+            <br><br>
+            <button id="get-meal" class="btn btn-primary">Get Meal</button>
+            <br><br>
+            <p id="display-text"></p><br>
+            <ul id="meal-plan"></ul>
+        </div>
+    </div>
+</div>
+<br><br>
+</body>
+</html>
